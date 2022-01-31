@@ -4,28 +4,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "DeliveryCore",
+    name: "DesignSystem",
     platforms: [.iOS(.v13)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "DeliveryCore",
-            targets: ["DeliveryCore"]),
+            name: "DesignSystem",
+            targets: ["DesignSystem"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(name: "DesignSystem", path: "DesignSystem"),
-        .package(name: "DomainDataLayer", path: "DomainDataLayer")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "DeliveryCore",
-            dependencies: ["DesignSystem", "DomainDataLayer"]),
+            name: "DesignSystem",
+            dependencies: []),
         .testTarget(
-            name: "DeliveryCoreTests",
-            dependencies: ["DeliveryCore"]),
+            name: "DesignSystemTests",
+            dependencies: ["DesignSystem"]),
     ]
 )
