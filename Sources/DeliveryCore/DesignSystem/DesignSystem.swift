@@ -8,6 +8,6 @@ public struct SharedView: View {
     }
     
     public init() {
-        
+        print(#function)
     }
 }
