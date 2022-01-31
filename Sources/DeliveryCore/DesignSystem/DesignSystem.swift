@@ -6,4 +6,8 @@ public struct SharedView: View {
             .frame(width: 100, height: 100)
             .background(Color.green)
     }
+    
+    public init() {
+        
+    }
 }
